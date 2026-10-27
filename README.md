@@ -18,6 +18,8 @@ conda activate zarr-read-bench
 
 ## Run (from the repo root)
 
+Update `config.py` to change array and chunk size as well as sizes of the subsets. 
+
 ```bash
 python -m bench.create_array   # 10000x10000 uint8, 1000x1000 chunks, zstd -> data/array.zarr
 python -m bench.make_subsets   # 200 random windows -> data/subsets.json
