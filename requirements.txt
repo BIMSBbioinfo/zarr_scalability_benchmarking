@@ -1,0 +1,8 @@
+# Single source of truth for Python deps (used by environment.yml and plain venvs).
+# After the first successful install, run scripts/freeze_env.sh to capture
+# exact versions in requirements.lock.txt / environment.lock.yml for replication.
+numpy>=2.0
+pandas>=2.2
+zarr>=3.1          # zarr-python v3 (zarr format 3, default codec pipeline)
+zarrs>=0.2         # zarrs-python: Rust codec pipeline plugged into zarr-python
+tensorstore>=0.1.75
